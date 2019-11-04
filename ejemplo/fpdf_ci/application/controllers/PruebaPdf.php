@@ -21,7 +21,7 @@ class PruebaPdf extends CI_Controller {
 				
 	}
 
-	public function crearPdfPropuestaAvanzada() // Esta forma es una propuesta para tener una integracion como libreria
+	public function crearPdfPropuestaAvanzada() 
 	{
 		$this->load->library('pdf/pdfCI');
 
