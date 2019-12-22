@@ -1,6 +1,6 @@
 <?php 
 require_once APPPATH.'third_party/fpdf/fpdf.php';
-class PdfCI {
+class Pdfci {
    	//funciones que queremos implementar en Miclase.
 	public $FPDF;
 	

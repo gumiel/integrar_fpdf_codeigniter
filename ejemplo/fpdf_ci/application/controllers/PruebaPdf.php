@@ -9,9 +9,9 @@ class PruebaPdf extends CI_Controller {
 	}
 
 	public function crearPdfPropuestABasica() // Esta forma es una propuesta para tener una integracion como libreria
-	{
-		$this->load->library('pdf/pdfCI');
-
+	{ 
+		$this->load->library('pdf/pdfci');
+		
 		$FPDF = $this->pdfci->FPDF;
 
 		$FPDF->AddPage('P','A4',0);
