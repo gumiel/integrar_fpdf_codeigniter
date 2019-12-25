@@ -5,7 +5,9 @@ class PruebaPdf extends CI_Controller {
 
 	public function index()
 	{
-		
+		echo "<a href='".site_url('PruebaPdf/crearPdfPropuestABasica')."' >crearPdfPropuestABasica</a><br>";
+		echo "<a href='".site_url('PruebaPdf/crearPdfPropuestaAvanzada')."'>crearPdfPropuestaAvanzada</a><br>";	
+		echo "<a href='".site_url('PruebaPdf/crearPdfFormaDirecta')."'>crearPdfFormaDirecta</a><br>";	
 	}
 
 	public function crearPdfPropuestABasica() // Esta forma es una propuesta para tener una integracion como libreria
@@ -23,7 +25,7 @@ class PruebaPdf extends CI_Controller {
 
 	public function crearPdfPropuestaAvanzada() 
 	{
-		$this->load->library('pdf/pdfCI');
+		$this->load->library('pdf/pdfci');
 
 		$FPDF = $this->pdfci->FPDF;
 
@@ -37,7 +39,7 @@ class PruebaPdf extends CI_Controller {
 	public function crearPdfFormaDirecta()
 	{
 
-		$this->load->library('pdf/pdfCI');
+		$this->load->library('pdf/pdfci');
 
 		$pdf = new FPDF();
 		$pdf->AddPage('P','A4',0);
