@@ -6,6 +6,7 @@ La configuración mostrada es el uso de la librería FPDF convertida en una para
 
 Esta es una de las muchas formas que se puede integrar con codeigniter pero esta es especial porque lo cree la librería para que pueda ser estandarizada para proyectos grandes creando como intermediario el archivo pdfCI.php dentro la carpeta de libreries.
 
+Ejemplo: http://integrar_fpdf_codeigniter.gumiel.net/index.php/PruebaPdf
 
 # Requisitos
 
